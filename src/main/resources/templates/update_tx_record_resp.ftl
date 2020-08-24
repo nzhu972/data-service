@@ -1,3 +1,5 @@
+<#setting number_format="computer">
+
 [{
   "submission_id": "${headers.h_submission_id}",
   "sid": "${headers.h_sid}",
