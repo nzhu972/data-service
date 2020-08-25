@@ -18,7 +18,7 @@
   "magic_num": "${headers.h_magic_num}",
 
 <#if headers.h_file_extension??>
-  "verified_file_extension": ${headers.h_file_extension},
+  "verified_file_extension": "${headers.h_file_extension}",
 <#else >
   "verified_file_extension": null,
 </#if>
@@ -49,7 +49,7 @@
 </#if>
 
 <#if headers.h_size??>
-  "file_size": "${headers.h_size},
+  "file_size": null,
 <#else >
   "file_size": null,
 </#if>
