@@ -12,7 +12,7 @@
     <camel.springboot.version>2.21.0.fuse-720050-redhat-00001</camel.springboot.version>
     
     <!-- configure the Fuse version you want to use here -->
-    <fuse.version>7.5.0.fuse-sb2-750029-redhat-00003</fuse.version>
+    <fuse.version>7.7.0.fuse-sb2-770010-redhat-00001</fuse.version>
 
     <!-- maven plugin versions -->
     <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
@@ -75,6 +75,18 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-tomcat</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-annotations</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -84,6 +96,24 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-actuator</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.11.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.11.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.11.2</version>
     </dependency>
 
     <dependency>
