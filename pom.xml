@@ -9,7 +9,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
    <!-- <camel.springboot.version>2.21.1</camel.springboot.version> -->
-    <camel.springboot.version>2.21.0.fuse-720050-redhat-00001</camel.springboot.version>
+    <camel.springboot.version>2.23.2.fuse-770010-redhat-00001</camel.springboot.version>
     
     <!-- configure the Fuse version you want to use here -->
     <fuse.version>7.7.0.fuse-sb2-770010-redhat-00001</fuse.version>
@@ -87,6 +87,14 @@
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-core</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>org.yaml</groupId>
+          <artifactId>snakeyaml</artifactId>
+        </exclusion>
+        <!-- <exclusion>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-core</artifactId>
+        </exclusion> -->
       </exclusions>
     </dependency>
     <dependency>
@@ -103,6 +111,12 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.11.2</version>
     </dependency>
+
+    <!-- <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.2.10.RELEASE</version>
+    </dependency> -->
 
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
