@@ -75,6 +75,7 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-tomcat</artifactId>
         </exclusion>
+        <!-- For the purpose of mitigating CVE-2019-14893, CVE-2020-11620, CVE-2020-11619, CVE-2020-9548, CVE-2020-9546, CVE-2019-14379, CVE-2019-14892, CVE-2020-8840 CVE-2019-14439, CVE-2020-14061, CVE-2020-14060, CVE-2019-14540, CVE-2019-16335, CVE-2019-16942, CVE-2019-16943, CVE-2019-17267, CVE-2019-17531, CVE-2019-20330, CVE-2020-9547, this is excluded or manually upgraded to the latest -->
         <exclusion>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-databind</artifactId>
@@ -87,14 +88,16 @@
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-core</artifactId>
         </exclusion>
+        <!-- For the purpose of mitigating CVE-2017-18640, this is excluded or manually upgraded to the latest -->
         <exclusion>
           <groupId>org.yaml</groupId>
           <artifactId>snakeyaml</artifactId>
         </exclusion>
-        <!-- <exclusion>
+        <!-- For the purpose of mitigating CVE-2020-5398, this is excluded or manually upgraded to the latest -->
+        <exclusion>
           <groupId>org.springframework</groupId>
           <artifactId>spring-core</artifactId>
-        </exclusion> -->
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -106,17 +109,18 @@
       <artifactId>spring-boot-actuator</artifactId>
     </dependency>
 
+    <!-- Dependencies added to Mitigate CVEs--> 
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
       <version>2.11.2</version>
     </dependency>
 
-    <!-- <dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>5.2.10.RELEASE</version>
-    </dependency> -->
+    </dependency>
 
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -130,6 +134,8 @@
       <version>2.11.2</version>
     </dependency>
 
+
+    <!-- MYSQL -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
