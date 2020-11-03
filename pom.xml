@@ -61,6 +61,12 @@
         <artifactId>infinispan-persistence-parent</artifactId>
         <version>${version.infinispan}</version>
         <type>pom</type>
+        <exclusions>
+          <exclusion>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -134,11 +140,11 @@
       <version>2.11.2</version>
     </dependency>
 
-    <dependency>
+    <!-- <dependency>
       <groupId>org.yaml</groupId>
       <artifactId>snakeyaml</artifactId>
       <version>1.26</version>
-    </dependency>
+    </dependency> -->
 
     <!-- MYSQL -->
     <dependency>
